@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #3a9ab7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.search {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.search h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.search-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3a9ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #318a9f;
+}
+
+.hotel-pages {
+    margin-top: 30px;
+}
+
+.hotel-page {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    position: relative;
+    height: 300px; /* Set a fixed height for consistency */
+    overflow: hidden; /* Hide overflow to keep the layout clean */
+}
+
+.hotel-page h3,
+.hotel-page p {
+    position: relative; /* Position text above the background */
+    z-index: 1; /* Ensure text is above background */
+}
+
+.hotel-page img {
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1; /* Ensure the image is above the background */
+    position: relative; /* Position image above the background */
+}
+
+.visit-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.visit-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Add CSS for the booking button */
+.book-button {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 1; /* Ensure button is above background */
+}
+
+.book-button:hover {
+    background-color: #C70039;
+}
+
+/* Additional styling for the range input */
+.input-group input[type="range"] {
+    -webkit-appearance: none; /* Override default CSS styles */
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, red, yellow, green); /* Gradient from red to yellow to green */
+    outline: none; /* Remove default outline */
+}
+
+.input-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default slider thumb styles */
+    appearance: none; /* Override default slider thumb styles */
+    width: 20px; /* Set width for slider thumb */
+    height: 20px; /* Set height for slider thumb */
+    border-radius: 50%; /* Make thumb round */
+    background: white; /* Color of the thumb */
+    border: 2px solid #3a9ab7; /* Thumb border color */
+}

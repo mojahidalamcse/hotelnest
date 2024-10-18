@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HotelNest - Find Your Perfect Stay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HotelNest</h1>
+            <p>Your go-to platform for finding the perfect hotel stay.</p>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <h2>Find a Hotel</h2>
+            <form class="search-form" id="searchForm">
+                <div class="input-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter city name">
+                </div>
+
+                <div class="input-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in">
+                </div>
+
+                <div class="input-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out">
+                </div>
+
+                <div class="input-group">
+                    <label for="guests">Guests:</label>
+                    <input type="number" id="guests" name="guests" value="1" min="1" max="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="price-range">Price Range (1000 - 12000):</label>
+                    <input type="range" id="price-range" name="price-range" min="1000" max="12000">
+                    <span id="price-display">1000</span> <!-- Display current price -->
+                </div>
+
+                <button type="submit">Search Hotels</button>
+            </form>
+
+            <div id="hotelPages" class="hotel-pages"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HotelNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
